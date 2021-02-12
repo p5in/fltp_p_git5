@@ -1,38 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  /* background: url("img/bg_img.jpg") no-repeat center center fixed; */
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  /* Add the blur effect */
+  background-color: #ffefb3;
+  backdrop-filter: blur(2px);
+}
+
 .App {
   text-align: center;
+  width: 100%;
+  height: 100%;
+}
+/* .custom_col {
+} */
+.uppercarddiv {
+  vertical-align: middle !important;
+  box-shadow: 3px 3px 7px #16161659;
+  border-radius: 7px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  background-color: #60c8af !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.div_card_icon {
+  max-width: 540px;
+}
+.card-title,
+.card-text {
+  color: #002c00;
+}
+.iconimg_card {
+  width: 90% !important;
+  padding-top: 10%;
+}
+.vl {
+  border-left: 1px solid #00800047;
+  height: 100%;
+}
+.arrow_card_img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 16%;
+  padding-left: 10px;
+  z-index: 9 !important;
+}
+.modal-header {
+  padding: 5px 0px;
+  height: 150px;
+}
+.modal-body {
+  padding: 0;
+}
+.modal_close_btn {
+  float: right;
+  border-radius: 2px;
+  margin: 10px 0;
+}
+.activity_icon_container {
+  position: absolute;
+  bottom: 12px;
+  text-align: right;
+  right: 35px;
+}
+.activity_img {
+  width: 40%;
+}
+.modal_card {
+  max-width: 18rem;
+}
+
+.activitymodalicon {
+  width: 20%;
+  position: absolute;
+  left: 40%;
+}
+
+@media only screen and (max-width: 772px) {
+  .custom_col {
+    padding: 20px;
+  }
+  .custom_container {
+    padding-top: 20px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (min-width: 772px) {
+  .custom_col {
+    padding-top: 15%;
+    height: 100vh;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media only screen and (max-width: 400px) {
+  .text_container {
+    width: 60% !important;
+  }
+  .text_container h5 {
+    padding-top: 5px !important;
+    font-size: 12px !important;
+  }
+  .text_container h6 {
+    font-size: 12px !important;
+  }
+  .mt-3 {
+    margin-top: 0rem !important;
+  }
+  .activity_img {
+    width: 25% !important;
+  }
+  .list-group .list-group-item {
+    font-size: 14px !important;
   }
 }
